@@ -5,23 +5,6 @@
 
 # APPARATUS REQUIRED:
 vivado 2023.2
-# LOGIC DIAGRAM:
-# ENCODER:
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/3cd1f95e-7531-4cad-9154-fdd397ac439e)
-# DECODER
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/45a5e6cf-bbe0-4fd5-ac84-e5ad4477483b)
-# MULTIPLEXER
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/427f75b2-8e67-44b9-ac45-a66651787436)
-# DEMULTIPLEXER:
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/1c45a7fc-08ac-4f76-87f2-c084e7150557)
-# MAGNITUDE COMPARATOR:
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/b2fe7a05-6bf7-4dcb-8f5d-28abbf7ea8c2)
-
 # PROCEDURE:
 ```
 STEP:1  Start  the Xilinx navigator, Select and Name the New project.
@@ -36,8 +19,11 @@ STEP:9  In the Design Object List Window, enter the pin location for each pin in
 STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 ```
-# VERILOG CODE:
-ENCODER:
+# LOGIC DIAGRAM:
+# ENCOEDER:
+![image](https://github.com/Devikavijaya/VLSI-LAB-EXP-2/assets/164987794/e6f8e624-7f0f-4994-a302-cd7d35eebad4)
+
+# CODE:
 ```
 module encoder(a,y);
 input [7:0]a;
@@ -50,7 +36,9 @@ endmodule
 # OUTPUT:
 ![image](https://github.com/Devikavijaya/VLSI-LAB-EXP-2/assets/164987794/ab0309aa-613b-4330-8516-1c26da1d80b6)
 
-DECODER:
+# DECODER:
+![image](https://github.com/Devikavijaya/VLSI-LAB-EXP-2/assets/164987794/9e500785-1229-489e-9b66-2ab3ecfe6445)
+# CODE:
 ```
 module decoder1(a,y);
 input [2:0]a;
@@ -68,7 +56,9 @@ endmodule
 # OUTPUT:
 ![image](https://github.com/Devikavijaya/VLSI-LAB-EXP-2/assets/164987794/3465ec7d-a0f8-4778-bd7c-4f97335cb911)
 
-MULTIPLEXER:
+# MULTIPLEXER:
+![image](https://github.com/Devikavijaya/VLSI-LAB-EXP-2/assets/164987794/e2819a0a-bdbc-44c3-988a-755afa64f3da)
+# CODE:
 ```
 module mux(s,c,a);
 input [2:0]s;
@@ -89,7 +79,9 @@ endmodule
 # OUTPUT:
 ![image](https://github.com/Devikavijaya/VLSI-LAB-EXP-2/assets/164987794/28510cc1-728c-421c-af89-451bada3bb19)
 
-DEMULTIPLEXER:
+# DEMULTIPLEXER:
+![image](https://github.com/Devikavijaya/VLSI-LAB-EXP-2/assets/164987794/ddda9b32-3e59-4eee-ac4c-880c941c7285)
+# CODE:
 ```
 module demux_8(s,a,y);
 input [2:0]s;
@@ -108,7 +100,9 @@ endmodule
 # OUTPUT:
 ![image](https://github.com/Devikavijaya/VLSI-LAB-EXP-2/assets/164987794/8ddccd10-64c1-4286-b36a-f708fc10306d)
 
-MAGNITUDE COMPARATOR:
+# MAGNITUDE COMPARATOR:
+![image](https://github.com/Devikavijaya/VLSI-LAB-EXP-2/assets/164987794/56dad887-e4ef-443b-8504-ed4fa1dd5fc1)
+# CODE:
 ```
 module mag_comparator(a,b,l,g,e);
 input [3:0]a,b;
